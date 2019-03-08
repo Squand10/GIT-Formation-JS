@@ -1,0 +1,139 @@
+Christopher LORENT
+clorent@dawan.fr
+
+GIT (gestion de version)
+
+Commandes Console (Linux)
+
+cd "chemin"					Se déplacer dans le dossier choisi 
+	cd ..					Aller dans le Dossier précédent
+
+	
+
+ls						Lister les éléments du dossier
+	ls -a					Lister les fichiers cachés
+	ls -l					Afficher les dates de création des fichiers
+
+
+mkdir nomdurepertoire				Créer un dossier "nomdurepertoire" dans le dossier 
+vim nomfichier 					créer et éditer un fichier
+rm nomfichier					supprime le fichier
+
+
+
+
+git init
+						Initialiser le répertoire (passer Master)
+git config --global user.name nom		Choisir le "nom" pour tout les dossiers  (cf .gitconfig)
+git config user.name				Afficher le Username
+git config user.name nom			Choisir "nom" comme Username
+git config user.email				Afficher l'email 
+git config user.email adresse			Choisir "adresse" comme adresse mail
+
+git config --list				Liste les commandes pour config     ???
+git config --list --show-origin			Montre le chemin des commandes      ???
+
+git help					afficher l'aide
+	git help commande			afficher l'aide pour la commande choisi
+	exemple: git help config		afficher l'aide pour la commande config
+
+Travail => Staging(index) => Repository (dépôt)
+
+git status 					Tester le statut de mon répertoire de travail
+	git status -s				idem mais plus court
+	git status --porcelain			enlève la couleurs des balises
+git add nomfichier				rajouter le fichier "nomfichier" dans le staging    (ou une modification/suppression)
+git add --all					ajouter tout les fichiers en attente dans le staging
+git rm nomfichier				supprime le fichier du depository et de l'espace de travail
+		
+
+
+git commit					rajouter les fichiers au depository
+git commit _m "nomducommit"			indique le nom du commit nomducommit
+git commit -am "nomducommit"			idem et ajoute tout les fichiers dans le staging en même temps
+git commit --amend -m "Commentaire"		change le commentaire du commit en tête
+
+
+git checkout -- nomfichier			recupère le fichier du depository vers l'espace de travail
+
+
+
+		commande console commit (VI)
+	i 					insérer du texte
+	esc					quitter l'insertion
+	:q 					quitter sans sauvegarder
+	:w					sauvegarder
+	:wq					sauver et quitter
+
+
+
+		GitIgnore
+vim .gitignore					crée le fichier .gitignore
+
+dans gitignore :
+.gitignore					ignore le fichier .gitignore
+*.txt						ignore les extensions txt
+*toto* 						ignore les fichiers contenant toto dans leur nom
+/nomdossier					ignore le dossier "nomdossier"
+
+
+git ls-tree master				affiche les fichiers et dossiers du depository		
+git ls-tree -r master 				affiche les fichiers du depository avec les chemins des fichiers	
+
+git log 					affiche les différents commits en détail	
+git log	--oneline				affiche les différents commits en une ligne				
+git log -3					affiche les 3 derniers commits 
+git log --stat					affiche le détail des commits
+git log --author="nomAuteur"			affiche les commits de nomAuteur
+git log fichier.ext				affiche les commits du fichier.ext
+
+git blame fichier.ext				affiche qui à modifier le fichier fichier.ext
+
+git diff 					affiche les différences entre le depository et l'espace de travail
+git diff --word-diff				affiche les différences de manière plus lisible	
+git diff XXXX YYYY fichier.ext			affiche les différences entre les commits de n° XXXX et YYYY pour le fichier.ext  (XXXX le plus ancien à YYYY le plus récent)
+
+git tag X.X					ajoute un tag de version au commit de tête
+git tag X.X YYYY				ajoute un tag de version au commit choisi YYYY
+git tag -a X.X					permet d'ajouter un commentaire à un tag
+git tag -a X.X -m "Commentaire"			permet d'ajouter un commentaire sans passer par l'éditeur de texte
+git tag X.X -d					supprime le tag X.X
+
+git show (nomTag)				détailler un tag
+
+
+
+
+
+
+git branch (-v)					Liste les branches (détails)
+git branch (-d) nomBranche (-D)			Créer la branche nomBranche (la supprime) (force la suppression!)
+git checkout (-b) nomBranche			Se déplace vers la branche nomBranche (et la créer)
+
+git merge nomBranche				Fusionne la branche nomBranche sur la branche actuelle
+
+
+git stash					sauvegarder toutes les modifications en attente
+git stash list					afficher la sauvegarde des modifications en attente
+git stash show idDuStash			affiche le détail de la sauvegarde choisi
+git stash apply					applique le dernière sauvegarde {0}
+git stash drop 					supprime la dernière sauvegarde
+git stash clear					supprime toutes les sauvegardes
+git stash pop 					applique et supprime la dernière sauvegarde
+
+
+
+lien gitHub
+https://github.com/Squand10/Formation-GIT.git
+
+
+
+git remote add nomDeposit lienGitHub		crée un alias pour le depository distant								
+git remote					affiche les différents depositorys distants
+git remote show nomDeposit			affiche des détails sur le depository choisi
+git remote remove nomDeposit			supprime l'alias du depository distant
+
+git push nomDeposit master			upload le depository local vers le distant (sur la branche master)
+git pull nomDeposit master			download le depository distant sur le local 
+git push nomDeposit --tags			upload les tags
+git pull
