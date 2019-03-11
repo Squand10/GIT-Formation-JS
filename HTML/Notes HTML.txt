@@ -1,0 +1,104 @@
+! + Tab     				preset de page html sur vsc
+
+
+
+
+<!DOCTYPE html>				Indique au navigateur la nature du document
+<!-- -->				Commentaires
+
+<html></html>				définit la racine (une seule par doc .html)
+<head></head>				tête du document contenant les méta-données
+<title></title>				titre de la fenêtre (doit être placé dans le <head>)
+<body></body>				partie visible du code (placé après le head)(une seule par doc)
+
+<inline></inline>			prend uniquement la largeur qui lui est nécessaire
+<block></block>				prend la largeur de son conteneur
+
+<stong></strong>			balise pour mettre en valeur des caractères (méta-données)
+<header></header>			indique où se situe la tête du site (bannière)
+<nav></nav> 				indique où se situe le menu de navigation
+<main></main>				indique où se trouve le contenu principale
+<aside></aside>				contenu annexe
+<section></section>			???
+<footer></footer>			indique le bas de page
+
+<hx></hx>				Titre de 1 à 6 par importance (un seul h1 par page)
+<p></p>					indique un paragraphe
+<a href="lien">nomdulien</a>		créer un lien clickable
+
+<ul></ul>				indique une liste non ordonnée
+<ol></ol>				indique une liste ordonnée
+<li></li>				indique les éléments de la liste
+
+<table></table>				définit l'ensemble du tableau
+<caption></caption>			donne une légende au tableau
+<thead></thead>				regroupe l'en-tête du tableau
+<tbody></tbody>				Entoure le corps du tableau
+<tfoot></tfoot>				Définit le pied du tableau
+<th></th>				une cellule de titre
+<tr></tr>				une ligne du tableau
+<td></td>				une cellule simple
+rowspan					Etend les lignes du tableau
+colspan					Etend les colonnes du tableau
+
+
+<img src="chemin de l'img" alt="description de l'image">
+
+<figure></figure>			encadre la selection ?
+
+<video src=""></video>				affiche un contenu video
+<audio src=""></audio>
+
+ou <video>
+	<source src="" type="">
+	<source src="" type="">
+</video>
+
+
+
+
+
+
+
+
+
+
+<form action="" method="GET">
+	<label for="">Prenom :</label>
+	<input type="text" name="prenom" id="prenom">
+</form>
+
+
+
+
+
+
+
+
+
+
+<form action="" method="GET">
+	<label for="">Prenom :</label>
+	<input type="text" name="prenom" id="prenomr"required>
+	<label for="date">Date :</label>
+	<input type="date" name="date" id="date"required>
+	<label for="">Ville :</label>
+	<input type="text" name="ville" id="ville" required>
+	<label for="password">Mot de passe :</label>
+	<input type="password" name="password" id="password" required>
+	<textarea name="" id="" cols="90" rows="10"></textarea>
+	<input type="submit" value="OK">
+</form>
+<form action="" method="post">
+	<label for="select">Ville :</label>
+	<select name="ville" id="select-ville">
+			<option value="Nantes">Nantes</option>
+			<option value="Paris">Paris</option>
+			<option value="Lyon">Lyon</option>
+			<option value="Nice">Nice</option>
+	</select>
+</form>
+
+
+
+

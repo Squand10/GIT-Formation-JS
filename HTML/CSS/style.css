@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+h1 {
+    background-color: aqua;
+    font-size: 4cm;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.lien{
+    background-color: darkgreen;
+}
+
+
+#article1{
+    background-color: chartreuse;
+}
+
+#article2{
+    background-color: crimson;
+}
+
+#article3{
+    background-color: aliceblue;
+}
+
+h2, h3{
+    font-style: oblique;
+    background-color: cyan;
+}
+
+a{
+    font-size: 2cm;
+}
+
+
+div > p {
+    background-color: greenyellow;
+}
+
+div + p{
+    background-color: maroon;
+}
+
+
+p::first-letter{
+    color: lime
+}
+
+
+
+
+
+
+
+
+
+.blink1 {
+    color:red; background-color:pink; 
+    animation: allblink 5s infinite;
+  }
+  @keyframes allblink { 
+  0% { }
+  50% { color:green; background-color:lightgreen; } 
+  }
+
+.blink2 {
+    color: dodgerblue; background-color:rgb(221, 0, 0); 
+    animation: allblink 2s infinite;
+  }
+  @keyframes allblink { 
+  0% { }
+  50% { color:rgb(4, 214, 4); background-color:lightgreen; } 
+  }
+
+.blink3 {
+    color:rgb(155, 252, 0); background-color:pink; 
+    animation: allblink 3s infinite;
+  }
+  @keyframes allblink { 
+  0% { }
+  50% { color:green; background-color:rgb(2, 163, 226); } 
+  }
+
+.blink4 {
+    color:rgb(60, 255, 0); background-color:rgb(68, 0, 255); 
+    animation: allblink 5s infinite;
+  }
+  @keyframes allblink { 
+  0% { }
+  50% { color:rgb(217, 255, 0); background-color:rgb(255, 0, 0); } 
+  }
