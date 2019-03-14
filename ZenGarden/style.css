@@ -55,8 +55,6 @@ body {
 
 header {
     text-align: center;
-
-
 }
 
 
@@ -64,19 +62,24 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
-
 }
 
 
 #nav-article {
+    
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
+    position:sticky;
+    top:0;
 }
 
-#header-nav-article {
 
+
+
+
+#header-nav-article {
     font-size: 0, 1vw;
     align-self:stretch;
 }
@@ -88,22 +91,17 @@ header {
 /*-----ARTICLE PAGE-----*/
 
 main {
-
     color: rgb(214, 209, 209);
     display: flex;
     justify-content:row;
     align-items:flex-start;
     padding: 1%;
-
-
-
 }
 
 article {
     padding: 5%;
     flex-shrink: 1;
     align-self: stretch;
-
 }
 
 
@@ -113,8 +111,6 @@ article {
     align-self: stretch;
     min-width: 20%;
     background: rgba(0, 0, 0, 0.288);
-
-
 }
 
 
