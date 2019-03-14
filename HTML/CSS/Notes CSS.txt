@@ -1,0 +1,17 @@
+:hover				passage de la souris
+:link				si le lien n'a jamais été clické
+:visited			si le lien a été clické
+:active				si nous somme sur la lien
+:onclick			en cliquant
+
+
+
+
+A mettre de préférence au début de chaque CSS
+
+*{					tout les éléments
+	margin:0;			marge ext à 0
+	padding:0;			marge extérieure à 0
+}
+
+

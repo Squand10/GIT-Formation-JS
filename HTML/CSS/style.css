@@ -2,16 +2,61 @@
 /* CSS Document */
 
 
+p{
+    display:flex;
+    flex-direction:row;
+}
+
+
+body{display:flex;}
+
+
+.giphy-embed{
+    position: fixed;
+}
+
+#celine{
+    opacity: 1;
+}
+
+
+#celine:hover{
+    opacity: 0;
+}
+
+#nuke{
+    opacity:0;
+}
+
+#nuke:hover{
+    opacity:1;
+}
+
+
 
 h1 {
     background-color: aqua;
     font-size: 4cm;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }
 
 
-.lien{
-    background-color: darkgreen;
+*{
+    font-family: 'XoloniumRegular';
+    font-weight: normal;
+    font-style: normal;
+ } 
+
+
+.lien:hover{
+    color:red; background-color:pink; 
+    animation: allblink 0.2s infinite;
+  }
+  @keyframes allblink { 
+  0% { }
+  50% { color:green; background-color:lightgreen; } 
+  }
 }
 
 
@@ -52,12 +97,17 @@ p::first-letter{
 
 
 
+footer{
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+    line-height: 50%;
+}
 
 
 
 
-
-
+/*
 .blink1 {
     color:red; background-color:pink; 
     animation: allblink 5s infinite;
@@ -93,3 +143,4 @@ p::first-letter{
   0% { }
   50% { color:rgb(217, 255, 0); background-color:rgb(255, 0, 0); } 
   }
+  */

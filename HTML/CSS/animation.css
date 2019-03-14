@@ -1,0 +1,13 @@
+input{
+    width:15em;
+
+    background: green;
+    transition: all 3s linear 1s;
+}
+
+
+input:focus{
+    background:red;
+    width:45em;
+    height:30em;
+}
