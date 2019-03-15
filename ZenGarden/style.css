@@ -1,24 +1,8 @@
 @charset "utf-8";
 
-@media screen and (max-width:1023px) {
-    #left-aside {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #left-aside {
-        display: none;
-    }
-    article {
-        background: rgba(0, 0, 0, 0.651);
-        text-align: center;
-    }
-}
 
 
-*{
-    
+*{  
     margin: 0;
     padding: 0;
 }
@@ -29,7 +13,7 @@
 
 body {
     background: center no-repeat url(img/imgbackground.jpg);
-    background-attachment: fixed;
+    background-attachment: local;
     -webkit-background-size: cover;
     /* pour anciens Chrome et Safari */
     background-size: cover;
@@ -44,7 +28,7 @@ body {
     justify-content:space-between;
     align-items: center;
     min-height: 100vh;
-
+    overflow: auto;
 
 
     --def: #96B7C4;
@@ -80,7 +64,6 @@ header {
 
 
 #header-nav-article {
-    font-size: 0, 1vw;
     align-self:stretch;
 }
 
@@ -108,7 +91,11 @@ article {
 
 #left-aside {
     /*overflow-x: scroll;*/
-    align-self: stretch;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right:0;
+    align-self:flex-start;
     min-width: 20%;
     background: rgba(0, 0, 0, 0.288);
 }
@@ -119,34 +106,12 @@ article {
 
 
 footer {
-    font-size: 1em;
     color: white;
     background: rgba(0, 0, 0, 0.527);
 }
 
 
 
-
-
-
-        h1 {
-            font-size: 6em;
-        }
-
-        h2 {
-            font-size: 3em;
-        }
-
-        h3 {
-            font-size: 3em;
-            margin-bottom: 2%;
-        }
-
-
-        p {
-            margin-bottom: 2%;
-            font-size: 22px;
-        }
 
 
 
@@ -173,7 +138,6 @@ li {
 /* Element counter */
 li::before {
     content: counters(index, ".", decimal-leading-zero);
-    font-size: 1.5rem;
     text-align: right;
     font-weight: bold;
     min-width: 50px;
@@ -247,7 +211,6 @@ li+li {
     position: relative;
     padding: 1.4rem 4.2rem;
     padding-right: 3.1rem;
-    font-size: 1.4rem;
     color: var(--inv);
     letter-spacing: 0.8rem;
     text-transform: uppercase;
@@ -419,6 +382,94 @@ li+li {
 
 
 
+
+
+
+
+/*
+@media screen and (max-width: 768px) {
+    #left-aside {
+        display: none;
+    }
+    article {
+        background: rgba(0, 0, 0, 0.651);
+        text-align: center;
+    }
+}
+*/
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+        h1 {
+            font-size: 6em;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+        
+        h3 {
+            font-size: 2em;
+            margin-bottom: 2%;
+        }
+
+        #left-aside > ul{
+            font-size: 1.4em;
+            margin-bottom: 2%;
+        }
+
+        ul{
+            font-size:3em;
+        }
+        p {
+            margin-bottom: 2%;
+            font-size: 1em;
+        }
+        footer{
+            font-size: 1em;
+        }
+        nav{
+            font-size: 2em;
+        }
+    }
+
+  }
+  
+  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 1em;
+            margin-bottom: 2%;
+        }
+
+        #left-aside > ul{
+            font-size:0.4em;
+        }
+
+        p {
+            margin-bottom: 2%;
+            font-size: 0.1em;
+        }
+        nav{
+            font-size: 0.4em;
+        }
+        footer{
+            font-size: 0.2em;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+      }
 
 
 

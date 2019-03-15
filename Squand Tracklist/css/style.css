@@ -1,0 +1,152 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    display:flex;
+    flex-direction:column; 
+    justify-content:space-between;
+    overflow: auto;
+
+    background-color: darkblue;
+    min-height: 100vh;
+    color: rgb(84, 122, 245);
+    flex-grow:1;
+    flex-shrink:1;
+}
+
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+
+    border: 1px solid rgb(132, 247, 255);
+    background-color:black;
+}
+
+
+#logo{
+
+    border: 1px solid rgb(132, 247, 255);
+}
+
+#logo >img{
+    
+}
+
+#form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid rgb(132, 247, 255);
+}
+nav{
+    background-color:black;
+    position:sticky;
+    top:0;
+    border: 1px solid rgb(132, 247, 255);
+
+}
+
+nav > ul {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    list-style: none;
+}
+
+main{
+    flex-grow:1;
+
+    display:flex;
+    flex-direction:row;
+    align-items:stretch;
+
+
+    border: 1px solid rgb(132, 247, 255);
+}
+
+aside{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right:0;
+    align-self: flex-start; /* <-- this is the fix */
+    border: 1px solid rgb(132, 247, 255);
+}
+
+
+
+article{
+    flex-grow:1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:space-between;
+    border: 1px solid rgb(132, 247, 255);
+}
+footer{
+    font-size: 2vh;
+    flex-shrink:2;
+    align-self:center;
+    text-align: center;
+    border: 1px solid rgb(132, 247, 255);
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+
+
+
+  @media screen and (min-width: 1024px) {
+
+    img {
+        padding: 3%;
+        max-width: 100%;
+        height: auto;
+      }
+}
+
+@media screen and (max-width: 1024px) {
+
+    img {
+        padding: 3%;
+        max-width: 50%;
+        height: auto;
+
+      }
+      h1{
+          display:none;
+      }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    img {
+        padding: 3%;
+        max-width: 40%;
+        height: auto;
+      }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    img {
+        padding: 3%;
+        max-width: 30%;
+        height: auto;
+      }
+}
