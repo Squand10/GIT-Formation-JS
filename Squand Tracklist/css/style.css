@@ -75,7 +75,7 @@ main{
 aside{
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 2%;
     right:0;
     align-self: flex-start; /* <-- this is the fix */
     border: 1px solid rgb(132, 247, 255);
