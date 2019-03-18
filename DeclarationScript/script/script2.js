@@ -53,6 +53,59 @@ console.log(arrayAssociatif["mother fucker"]);
 
 
 
+let listePrenom =["François", "Pierre", "Omer", "Cham"];
+
+console.log("Boucle for of");
+for(let prenom of listePrenom){
+    console.log(prenom);
+}
 
 
+console.log("Boucle for each");
+listePrenom.forEach(
+    function(element)
+    {
+    console.log(element);
+    }
+);
+
+
+//Call back
+//array.forEach(function(){})
+
+listePrenom.forEach(function(prenom){
+    if (prenom === "Omer") {
+        console.log("bien");
+    }
+});
+
+
+console.log("00");console.log("00");console.log("00");console.log("00");console.log("00");console.log("00");console.log("00");console.log("00");
+//Définir un tableau
+let tableau = ["Morgan", "Paco", "Squand", "Momo","Jimmy","Isaac"];
+console.log(tableau);
+//Supprimer la première valeur d'un tableau     
+tableau.shift();
+console.log(tableau);
+//Supprimer la dernière valeur d'un tableau
+tableau.pop();
+console.log(tableau);
+//Ajouter à l'index 2 de votre tableau un nouveau tableau
+tableau[2] =["Mammy","Micky","Bobby"];
+console.log(tableau);
+//avec plusieurs valeurs
+//(Deux façons de faire)
+
+//Ajouter une valeur à la fin du tableau
+tableau.push('Batard');
+console.log(tableau);
+//Inverser le tableau
+tableau.reverse();
+console.log(tableau);
+//Trier le tableau par ordre alphabétique
+tableau.sort();
+  console.log(tableau);
+//Retrouvé la longueur d'un tableau
+
+console.log(tableau.length);
 
