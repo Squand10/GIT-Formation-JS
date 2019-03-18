@@ -1,36 +1,153 @@
-//Permet de vérifier si une varible est bien déclarée
-//et si elle n'est pas présenté plusieurs fois
+'use strict'
 
-'use-strict'
+let attribution = 1000;
+
+// Addition
+let add=1;
+add +=5;
+console.log(add);
+
+// Soustraction
+let sous = 10;
+sous -= 5;
+console.log("soustraction : " + sous);
+
+//multiplication
+let mult =5;
+mult *=2;
+console.log("multiplication : " + mult);
+
+// Division
+let div = 10;
+div /= 2;
+console.log("division : " + div);
+
+// Modulo %
+//Donne le reste d'une division
+let modulo = 10;
+modulo = modulo % 3;
+console.log(modulo);
+
+// Incrémentation (++ ajoute 1)
+let increment = 10;
+console.log("incrémentation : " + ++increment);
+
+//décrementation (-- soustrait 1)
 
 
-//déclaration d'une variable
-var nom = "var1";
-let prenom = "Squand";
-const age = 28;
 
-//Type de données
-//type string ou chaine de caractères :"" ou ''
-//type Number ou nombre
-// type boolean 0 ou 1 / true ou false
-//type Null
+// Opérateur de comparaison
 
-nom ="Gadiou";
-prenom ="Morgan";
+// comparaison == (Exemple : c == b); verifira uniquement la valeur
+let c = 5;
+let b = 5;
+console.log(c == b);
+// comparaison strict === verifira la valeur et le type
+let e = 5;
+let f = "5";
+console.log(e === f);
+
+// plus grand que ... > superieur à
+let g = 10;
+let h = 5;
+console.log(g > h);
+
+// plus petit que ... < inferieur à
+let i = 5;
+let j = 20;
+console.log( i < j);
+// il y a aussi >= <=
+
+// La negation simple (!)
+let o = 5;
+let p = 2;
+console.log(o != p);
+
+// La négation strict (!==)
+let q = 5;
+let r = "5";
+console.log(q !== r);
+
+//Operateur logique
+
+//ET logique
+//&&
+// OU logique
+// || (alt gr +6)
+// NON Logique
 
 
-console.log(nom);
-console.log(prenom);
+
+// Les conditions
+let maVariable = 5;
+
+if (maVariable ===10) {
+   console.log("La variable est égale à 10");
+} else {
+   console.log("La variable n'est pas égale à 10");
+}
+
+// If else if
+if (maVariable ===5) {
+   console.log("ma variable vaut : 5");
+} else if (maVariable ===15) {
+   console.log("ma variable vaut : 15");
+} else if (maVariable ===20) {
+   console.log("ma variable vaut : 20");
+} else if (maVariable ===30) {
+   console.log("ma variable vaut : 30");
+} else {
+   console.log("Je ne connais pas la valeur");
+}
+
+// Ternaure
+/*
+if (condition) {
+
+} else {
+
+}
+// Equivalent au if else if
+switch (key) {
+   case value:
+
+       break;
+
+   default:
+       break;
+}
+*/
 
 
-let u=null
-let uu;
-let nn=Nan;   //Not a Number
-
-console log(typeof(u));
-console log(typeof(uu));
-console log(typeof(nn));
 
 
+console.log("Boucle while");
+let resultatWhile = 0;
+while(resultatWhile < 10){
+    ++resultatWhile;
+    console.log(resultatWhile);
+}
 
-let listPrenom=["François","Pierre","Paul"]
+
+console.log("Boucle do While")
+let doWhile =0;
+do{
+    doWhile--;
+    console.log(doWhile);
+} while (doWhile > -10);
+
+
+console.log("Boucle for");
+for(let zz = 20; zz < 30; zz++){
+    console.log(zz);
+}
+
+
+
+
+
+console.log("Boucle for of");
+let array = ["François","Pierre","Omer"];
+for (const iterator of array){
+    console.log(iterator);
+}
