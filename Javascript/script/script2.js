@@ -251,7 +251,7 @@ function trigo(a, b, c){
 }
 
 */
-
+/*
 //Fonction qui utilise de 1 à n paramètres
 function utilisationRest(...rest){
     let resultat = 0;
@@ -282,7 +282,7 @@ let monObjet = {
 console.log(monObjet);
 
 
-
+*/
 
 
 
@@ -309,7 +309,7 @@ let mecton = {nom,prenom,ville};
 console.log(mecton);
 */
 
-
+/*
 
 function Person(nom,prenom,ville,loisir,plat,profession){
     this.nom = nom;
@@ -341,7 +341,7 @@ Person.prototype.fullName = function(){
 }
 
 luc.fullName();
-
+*/
 
 /*
 let newPerson = Object.assign(
@@ -354,7 +354,7 @@ let newPerson = Object.assign(
 
 console.log(newPerson);
 */
-
+/*
 Person.prototype.resume2 = function(){
     return console.log("Je m'appelle "+ this.prenom + " " + this.nom +" j'habite à " + this.ville + " et j'aime beaucoup " + this.loisir + ", deguster " + this.plat + " et pratiquer mon métier : " +this.profession);
 }
@@ -369,4 +369,208 @@ let date = new Date();
 console.log(date);
 console.log(date.toLocaleDateString());
 console.log(date.getTimezoneOffset());
+
+let string = new String("string transformé en objet");
+console.log(string);
+
+*/
+
+
+/*
+
+
+let titreH2 = document.querySelector("h2"); 
+console.log(titreH2);
+let allTitreH2 = document.querySelectorAll("h2")
+console.log(allTitreH2); 
+
+allTitreH2.forEach(element =>{
+    console.log(element);
+});
+
+let idTitre2 = document.querySelector("#titre");
+console.log(idTitre2);
+
+// Pas compatible node (il paraît....)
+let classTitre = document.getElementsByClassName("titre-h2");
+console.log(classTitre);
+
+idTitre2.textContent = "Nouveau titre";
+
+
+let ulListe = document.querySelector("#ulListe");
+console.log(ulListe.children);
+
+console.log(ulListe.parentElement);
+
+
+
+//Création d'élément
+let li = document.createElement('li');
+li.textContent = "Liste 4";
+li.className = "liListe";
+
+ulListe.appendChild(li);
+ulListe.insertAdjacentElement("afterbegin", li);
+
+
+let liListe = document.querySelector("Li:nth-child(0n+2)");
+console.log(liListe);
+
+
+let section = document.querySelector("#content");
+console.log(section);
+let nomSection = "Section article"
+let content = `
+<h4>Titre de ${nomSection}</h4>
+<p>BABLABLABLABALBALBLALa</p>
+`;
+
+section.innerHTML = content;
+
+*/
+
+
+
+
+// Créer une fonction qui génerera le nombre de lien
+//définit en paramètre
+//les liens devront être placé dans la balise nav
+//ils doivent avoir le href de remplit
+//une classe
+//et le nom du lien
+
+
+/*
+
+function createLien(u){
+
+    for (let n = 1; n-1 < u; n++) {
+        
+        let lien = document.createElement("a");
+        lien.textContent = "Page" + n;
+        lien.className = "lienNav";
+        lien.href = "page" + n + ".html" 
+
+
+        let liste = document.createElement("li");
+        liste.id = "liste" + n;
+
+
+        let listSelector = document.querySelector("nav");
+
+        listSelector.appendChild(liste);
+        
+
+        let linkSelector = document.querySelector("#liste" + n);
+        linkSelector.appendChild(lien); 
+    }
+} 
+createLien(6);
+*/
+
+
+
+
+
+let inputButton = document.querySelector("input[type=button]");
+
+let inputLien = document.querySelector("#nomLien");
+let inputLink = document.querySelector("#nomLink");
+let n = 0;
+inputButton.addEventListener("click",
+ 
+ 
+
+    function createLien(){
+        
+       
+
+
+
+        let lien = document.createElement("a");
+        lien.textContent = inputLien.value;
+        lien.href = inputLink.value;
+
+        
+
+        n = n+1;
+
+        let liste = document.createElement("li");
+        liste.id = "Lien" + n;
+
+
+
+        let listSelector = document.querySelector("nav");
+        listSelector.appendChild(liste); 
+        
+        
+        let linkSelector = document.querySelector("#Lien" + n);
+        linkSelector.appendChild(lien); 
+
+        
+    
+});
+
+
+
+
+
+
+/*
+var nombreLien = prompt("Entrez un nombre de liens à créer");
+
+if (nombreLien != null){
+    createLien(nombreLien);
+}
+
+*/
+
+
+
+
+/*function createLien(selectObject) {
+    var qtéSélectionnée = 0;
+    for (var i = 0; i < selectObject.options.length; i++) {
+      if (selectObject.options[i].selected) {
+        qtéSélectionnée++;
+      }
+    }
+    return qtéSélectionnée;
+  }
+*/
+
+
+
+
+
+/*
+
+
+let inputButton = document.querySelector("input[type=button]");
+
+let input = document.querySelector("#firstName")
+
+
+inputButton.addEventListener("click", function(){
+    alert("FUCK YOU " + input.value);
+});
+
+
+
+input.addEventListener("keydown", function(event){
+    if (event.key === "Enter"){
+        event.preventDefault();
+        alert("FUCK YOU " + input.value);
+        
+    }
+
+})
+
+*/
+
+
+
+
+
 
