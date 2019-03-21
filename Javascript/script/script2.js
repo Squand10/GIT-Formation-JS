@@ -470,13 +470,15 @@ createLien(6);
 */
 
 
-
+/*
 
 
 let inputButton = document.querySelector("input[type=button]");
 
 let inputLien = document.querySelector("#nomLien");
 let inputLink = document.querySelector("#nomLink");
+
+
 let n = 0;
 inputButton.addEventListener("click",
  
@@ -485,7 +487,7 @@ inputButton.addEventListener("click",
     function createLien(){
         
        
-
+        
 
 
         let lien = document.createElement("a");
@@ -512,7 +514,7 @@ inputButton.addEventListener("click",
     
 });
 
-
+*/
 
 
 
@@ -569,8 +571,126 @@ input.addEventListener("keydown", function(event){
 
 */
 
+/*
+let inputFirstName = document.querySelector('#firstName');
+
+
+let inputButton = document.querySelector('input[type=button]');
+
+
+function checkInput (input){
+   if(!isNam(input.value)){
+       unput.style.background = "red";
+   } else {
+       input.style.background = "green";
+   }
+   !isNaN(input.value) ? input.style.background = "red" : input.style.background = "green";
+};
+
+
+inputButton.addEventListener("click", function(){
+   let input = document.querySelector('#firstName');
+   checkInput(input);
+   //!inputFirstName(input.value) ? input.style.background = "red" : input.style.background = "green";
+});
+
+inputFirstName.addEventListener("keydown", function(event){
+   let input = document.querySelector('#firstName');
+   if (event.key === "Enter") {
+       
+         //La fonction PreventDefault permet d'annuler le comportement par defautl du nav
+        
+        
+             event.preventDefault();
+       checkInput(input);
+
+   }
+});
+*/ 
+
+
+/*   Liste de trucs...
+
+EventTarget.addEventListener(type, listener [, usecapture]);
+
+var phase = event.eventPhase;
+
+return false //DOM Level 0     PAS BIEN
+event.preventDefault() //DOM level 2    BIEN
+
+event.stopPropagation()
+
+
+*/
+/*
+
+import { PI } from"script.js";
+
+//import * as importation from "./script.js";
+
+console.log(importation.PI);
+
+importation.mafonction();
+*/
+/*
+
+const exemple1 = function () {
+    console.log("exemple1");
+};
+
+
+//appel en tant que fonction
+exemple1();
 
 
 
 
+
+    
+const kitty = {
+    name: "Felix",
+    meow: function(){
+        console.log(this.name);
+    }
+};
+
+
+//appel en tant que méthode
+kitty.meow();
+
+
+const LittleCat = function(name) {
+    this.name = name;        //BIEN
+};
+function LittleCat2() {
+    console.log(toto);
+    const toto = 123;
+};
+
+
+
+
+LittleCat.prototype.meow = function() {
+    console.log("exemple1");  
+};
+
+
+
+//appel en tant que constructeur
+const bill = new LittleCat("Bill");
+console.log(bill);
+
+//appel avec call ou apply
+exemple1.apply(bill);
+
+*/
+
+import {Galery} from "./script.js"
+
+document.addEventListener("DOMContentLoaded", function(){
+    const galleryElt = document.querySelector(".gallery");  
+    const gallery = new Galery(galleryElt);
+    gallery.init();
+
+});
 

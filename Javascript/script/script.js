@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 let attribution = 1000;
 
 // Addition
@@ -119,7 +119,7 @@ switch (key) {
 */
 
 
-
+/*
 
 console.log("Boucle while");
 let resultatWhile = 0;
@@ -150,4 +150,49 @@ console.log("Boucle for of");
 let array = ["François","Pierre","Omer"];
 for (const iterator of array){
     console.log(iterator);
+}
+
+*/
+
+/*
+export const PI = 3.1415;
+export mafonction
+*/
+
+
+
+export class thumbnails {
+   constructor(domElt) {
+      this.root = domElt;
+   }
+
+   init() {
+      this.root.innerHTML = "<div class='component viewer-component'>Visionneuse</div>";
+   }
+}
+
+export class Galery {
+   constructor(domElt) {
+      this.root = domElt;
+   }
+
+   init() {
+      this.root.innerHTML = `<h1>Ma super galerie WOUHOU</h1>
+      <div class="component viewer-component"></div>
+      <div class="component thumnails-component"></div>
+      `;
+   }
+}
+
+
+
+export class Viewer {
+   constructor(domElt) {
+      this.root = domElt;
+   }
+   init(){
+      this.root.innerHTML = '';
+
+   }
+
 }
