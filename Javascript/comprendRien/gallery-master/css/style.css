@@ -4,11 +4,11 @@
     margin: 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 
 .thumbnails-component img {
-    height: 10em;
+    height: 15em;
     box-shadow: 0 0 .5em black;
 }

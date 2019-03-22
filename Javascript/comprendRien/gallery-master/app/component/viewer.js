@@ -4,4 +4,5 @@ export class Viewer extends Component{
     init() {
         this.root.innerHTML = 'Visionneuse';
     }
+    
 }

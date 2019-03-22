@@ -1,14 +1,19 @@
 import {Component} from "./component.js";
-import {IMAGE_LIST} from "./image-list.js";
+//import {ImageListXhr} from "./xmlhttprequest.js";
+import {ImageListFetch} from "./fetchhttprequest.js"
 
 export class Thumbnails extends Component{
     init() {
-        this.root.innerHTML = Thumbnails.displayList(IMAGE_LIST);
+//      const imageListXhr = new ImageListXhr();
+        ImageListFetch.obtenirLaListe().then((laReponse) => {
+            this.root.innerHTML = Thumbnails.afficherListe(laReponse);
+        });
+        this.root.innerHTML = '<p>Chargement des miniatures</p>'
     }
-    static displayList(list) {
-        const htmlImgArray = list.map(img => `<li><img src="img/${img}"/></li>`);
-        const htmlImgString = htmlImgArray.join();
-        return `<ul>${htmlImgString}</ul>`;
+    static afficherListe(liste) {
+        const tableau = liste.map(img => `<li><img src="img/${img}"/></li>`);
+        const texte = tableau.join();
+        return `<ul>${texte}</ul>`;
 
     }
 }
