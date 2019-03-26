@@ -1,0 +1,83 @@
+
+
+
+body {
+	background-color: rgb(184, 166, 166);
+}
+
+main{
+	background-color: rgb(24, 196, 24);
+	height: 100%;
+	width: 1000px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+.navbar-inverse {
+	background-color: yellow;
+	opacity:0.8 ;
+	
+}
+
+
+
+#head{
+	background-color: rgb(234, 250, 4) ;
+}
+
+
+.footer1{
+	background-color: yellow;
+
+}
+
+
+.footer2{
+	background-color: yellow;
+
+}
+
+
+
+.item-box-blog{
+	border: 5px 5px 2px #aaa;
+}
+
+
+
+
+figure{
+	height: 10%;
+	width: 9%;
+	display: inline-block;
+	background-color: white;
+	position: relative;
+	margin: 30px 50px;
+	text-align: center;
+	box-shadow: 5px 5px 2px #aaa;
+	padding: 10px;
+
+}
+
+
+figure:nth-of-type(even){
+	transform: rotate(10deg);
+}
+
+figure:nth-of-type(odd){
+	transform: rotate(-8deg);
+}
+
+figure:nth-of-type(even):hover{
+	transform: rotate(0deg);
+	transform: scale(1.3);
+	transition: transform 0.4s;
+}
+
+figure:nth-of-type(odd):hover{
+	transform: rotate(0deg); 
+	transform: scale(1.3);
+	transition: transform 0.4s;
+}
