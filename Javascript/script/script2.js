@@ -200,7 +200,7 @@ let array2 = ["Srgerzgzrg", "Paezgezgezl", 255, "Mazegezgezg", 448, 233];
 
 
 
-let arrayTri = function (arrayList){
+let arrayTri = function  (arrayList){
 let arrayString = [];
 let arrayNumber = [];
 let arrayResult = [];
