@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %} Default title {% endblock %}</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Node<small>Express</small></h1>
+                <hr />
+            </header>
+            <nav style="margin: 10px 0; text-align: center">
+                <a href="/">Accueil</a>
+                <a href="/old">Old Accueil</a>
+                <a href="/hello/marie">Hello</a>
+            </nav>
+            <section>
+                {% block content %}{% endblock %}
+            </section>
+            <footer>
+                <hr />
+                <p>Formation Node - Dawan Nantes - Avril 2019</p>
+            </footer>
+        </main>
+    </body>
+</html>

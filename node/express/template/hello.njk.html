@@ -1,0 +1,16 @@
+{% extends 'base.njk.html' %}
+
+{% block title %} Hello {% endblock %}
+
+{% block content %}
+
+
+<div>
+    <a href="/hello/jean">Jean</a>
+    <a href="/hello/sophie">Sophie</a>
+</div>
+
+<p>Hello {{ name | title }}</p>
+
+
+{% endblock %}
