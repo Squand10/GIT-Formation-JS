@@ -5,6 +5,6 @@ import dice from './dice.js';
 
 const squand = new Perso(1, 'Squand', 150, 0, 50, 45, 45);
 const csq = new Item('Casque', 14, 10 ,10 ,10);
-
+const gob = new Mob ("Gobelin", 20, 10 , 30 , 5);
 console.log(csq.decrire());
 

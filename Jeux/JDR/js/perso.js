@@ -12,7 +12,7 @@ export default class Perso {
 }
 
 decrire(){
-        return `${this.nom} a ${this.vie} vie, ${this.armor} d'armure, ${this.force} force, ${this.agi} agilité, ${this.inte} intelligence, ${this.xp} points d'expérience et ${this.gold} pièces d'or`;
+        return `${this.nom} est de niveau ${this.lvl} a ${this.vie} vie, ${this.armor} d'armure, ${this.force} force, ${this.agi} agilité, ${this.inte} intelligence, ${this.xp} points d'expérience et ${this.gold} pièces d'or`;
 }
 
 attaquer(cible){
